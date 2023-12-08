@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.54fa1f24.css",
+    "main.js": "/static/js/main.193a5614.js",
+    "static/media/CloudServicesImg.jpg": "/static/media/CloudServicesImg.fde03cbdb2693a92f559.jpg",
+    "static/media/AgnietBg2.jpg": "/static/media/AgnietBg2.494fd4e32a966a62b6d7.jpg",
+    "static/media/BackupSupport.jpg": "/static/media/BackupSupport.27d7f4eb60f809628d6a.jpg",
+    "static/media/homepage_bg.jpg": "/static/media/homepage_bg.087463f7cab4c79fd5f3.jpg",
+    "static/media/EmailProtection Service.jpg": "/static/media/EmailProtection Service.aa9337554aa0d369f4cd.jpg",
+    "static/media/BusinessPlanning.png": "/static/media/BusinessPlanning.7d256c4fa0b9427e75dd.png",
+    "static/media/VirtualizationImg.jpg": "/static/media/VirtualizationImg.b85084a0a8d5ad050274.jpg",
+    "static/media/NetworkSecurity.png": "/static/media/NetworkSecurity.eaf16b8b0fae834bae56.png",
+    "static/media/EmailSpamProtectionImg.jpg": "/static/media/EmailSpamProtectionImg.68fe1890fd072b8a91b2.jpg",
+    "static/media/AgnietLogoBlueBg.jpeg": "/static/media/AgnietLogoBlueBg.17cc41d77d288192f723.jpeg",
+    "static/media/PoppinsExtraLight.ttf": "/static/media/PoppinsExtraLight.333cb30c20e31999802a.ttf",
+    "static/media/PoppinsLight.ttf": "/static/media/PoppinsLight.7641a0f76ca9ef6c252c.ttf",
+    "static/media/PoppinsMedium.ttf": "/static/media/PoppinsMedium.673ed42382ab264e0bf5.ttf",
+    "static/media/PoppinsBold.ttf": "/static/media/PoppinsBold.cdb29a5d7ccf57ff05a3.ttf",
+    "static/media/PoppinsExtraBold.ttf": "/static/media/PoppinsExtraBold.01849ee091e1762a5dd5.ttf",
+    "static/media/PoppinsBlack.ttf": "/static/media/PoppinsBlack.d8b850b920a5ef49d752.ttf",
+    "static/media/Office365Img.jpg": "/static/media/Office365Img.09f554343d57f9123a6a.jpg",
+    "static/media/AgnietLogoBlueBg2.png": "/static/media/AgnietLogoBlueBg2.e4b902a27d004a076791.png",
+    "static/media/tech-support.png": "/static/media/tech-support.201f25ee4bf2f7cd9541.png",
+    "static/media/ITConsulting.jpg": "/static/media/ITConsulting.5b16a7b822be0e68a899.jpg",
+    "static/media/AgnietLogoWhite.jpeg": "/static/media/AgnietLogoWhite.23e57d5ceb765a8bc18c.jpeg",
+    "static/media/ItManagement.jpg": "/static/media/ItManagement.97741cc85cf5b5eb9c89.jpg",
+    "static/media/VOIPImg.png": "/static/media/VOIPImg.3c76dfbba9edeb70e13f.png",
+    "static/media/BackupRecovery.jpeg": "/static/media/BackupRecovery.936f76fd71ede98d6d75.jpeg",
+    "static/media/VOIPService.png": "/static/media/VOIPService.3aff9f9d22c84ccf0e36.png",
+    "index.html": "/index.html",
+    "main.54fa1f24.css.map": "/static/css/main.54fa1f24.css.map",
+    "main.193a5614.js.map": "/static/js/main.193a5614.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.54fa1f24.css",
+    "static/js/main.193a5614.js"
+  ]
+}
