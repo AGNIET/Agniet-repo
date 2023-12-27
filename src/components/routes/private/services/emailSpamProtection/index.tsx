@@ -1,11 +1,11 @@
 import React from "react";
 import { EmailSpamProtectionImg } from "../../../../../assets";
+import styles from "./EmailSpamProtection.module.scss";
 
 export default function EmailSpamProtection() {
   return (
-    <div className="full-height-container">
-      {" "}
-      <div className="full-height-container">
+    <div className="full-height-container text-white">
+      <div>
         <div className="container">
           <div className="d-flex gap-5 align-items-center pt-4">
             <div>
@@ -28,7 +28,7 @@ export default function EmailSpamProtection() {
             </div>
           </div>
         </div>
-        <div className="container pt-4">
+        <div className={`p-5 ${styles.gradientContainer}`}>
           <h5>Email/Spam Protection solutions from Agniet Networking offer:</h5>
           <ul>
             <li>

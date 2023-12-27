@@ -1,11 +1,11 @@
 import React from "react";
 import { Office365Img } from "../../../../../assets";
+import styles from "./MicrosoftOffice.module.scss";
 
 export default function MicrosoftOffice() {
   return (
-    <div className="full-height-container">
-      {" "}
-      <div className="full-height-container">
+    <div className="full-height-container text-white">
+      <div>
         <div className="container">
           <div className="d-flex gap-5 align-items-center pt-4">
             <div>
@@ -28,7 +28,7 @@ export default function MicrosoftOffice() {
             </div>
           </div>
         </div>
-        <div className="container pt-4">
+        <div className={`p-5 ${styles.gradientContainer}`}>
           <h5>Just look at what Microsoft Office 365 has to offer:</h5>
           <ul>
             <li>Seamless collaboration even in remote working conditions</li>

@@ -1,11 +1,11 @@
 import React from "react";
 import { VOIPImg } from "../../../../../assets";
+import styles from "./VOIP.module.scss";
 
 export default function VOIP() {
   return (
-    <div className="full-height-container">
-      {" "}
-      <div className="full-height-container">
+    <div className="full-height-container text-white">
+      <div>
         <div className="container">
           <div className="d-flex gap-5 align-items-center pt-4">
             <div>
@@ -28,7 +28,7 @@ export default function VOIP() {
             </div>
           </div>
         </div>
-        <div className="container pt-4">
+        <div className={`p-5 ${styles.gradientContainer}`}>
           <h5>Our VoIP solutions are:</h5>
           <ul>
             <li>

@@ -1,10 +1,10 @@
 import React from "react";
 import { CloudServicesImg } from "../../../../../assets";
+import styles from "./CloudServices.module.scss";
 
 export default function CloudServices() {
   return (
-    <div className="full-height-container">
-      {" "}
+    <div className="full-height-container text-white">
       <div className="full-height-container">
         <div className="container">
           <div className="d-flex gap-5 align-items-center pt-4">
@@ -33,7 +33,7 @@ export default function CloudServices() {
             </div>
           </div>
         </div>
-        <div className="container pt-4">
+        <div className={`p-5 ${styles.gradientContainer}`}>
           <h5>Cloud Services from Agniet Networking are:</h5>
           <ul>
             <li>Scalable - grow your cloud technology as you need</li>

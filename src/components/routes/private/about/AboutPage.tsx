@@ -19,7 +19,7 @@ export default function AboutPage() {
         <div>
           <div>
             <a href="/about" className="text-decoration-none text-white">
-              <h4 className="p-4">About</h4>
+              <h4 className="p-4 text-center">About</h4>
             </a>
           </div>
           <div>
@@ -36,7 +36,7 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="p-4">
-            <h4 className="text-center pb-4">Our Vision:</h4>
+            <h4 className="text-center pb-4 text-white fw-bold">Our Vision:</h4>
             <div>
               <p
                 className={`d-flex text-center text-primary container p-4 bg-white rounded ${styles.aboutUsTxtContainer}`}

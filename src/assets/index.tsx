@@ -18,6 +18,12 @@ import AgnietLogoBlue2 from "./images/AgnietLogoBlueBg2.png";
 import BackupSupport from "./images/BackupSupport.jpg";
 import EmailProtectionService from "./images/EmailProtection Service.jpg";
 import VOIPService from "./images/VOIPService.png";
+import HomepageMaintenance from "./images/HomepageMaintenance.gif";
+//products for shop
+import CameraImage from "./images/CameraImage.jpg";
+import MonitorImage from "./images/Monitor.jpg";
+import MouseImage from "./images/RazorMouse.png";
+import KeyboardImage from "./images/White_Keyboard.jpeg";
 
 export {
   AgnietLogoBlue,
@@ -39,4 +45,9 @@ export {
   BackupSupport,
   EmailProtectionService,
   VOIPService,
+  HomepageMaintenance,
+  CameraImage,
+  MonitorImage,
+  MouseImage,
+  KeyboardImage,
 };

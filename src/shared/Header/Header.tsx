@@ -9,7 +9,7 @@ import styles from "./Header.module.scss";
 
 export default function Header() {
   return (
-    <div>
+    <div className={styles.allMenu}>
       <div className="d-flex justify-content-between p-3">
         <div className={styles.agnietLogo}>
           <img
@@ -20,13 +20,13 @@ export default function Header() {
           />
         </div>
         <div className="d-flex align-items-center gap-2">
-          <a href="/" className={`rounded border p-2 ${styles.buttons}`}>
-            Homepage
+          <a href="/" className={`rounded  p-2 ${styles.buttons}`}>
+            Home
           </a>
           <div className={`${styles.dropdownServices} dropdown`}>
             <Link to="/services" />
             <button
-              className={`btn text-white rounded p-2 border dropdown-toggle ${styles.buttons}`}
+              className={`btn text-white rounded p-2  dropdown-toggle ${styles.buttons}`}
               type="button"
               id="dropdownMenuButton"
               data-toggle="dropdown"
@@ -112,19 +112,19 @@ export default function Header() {
           </div>
           <a
             href="/shop"
-            className={`rounded border p-2 nounderline ${styles.buttons}`}
+            className={`rounded  p-2 nounderline ${styles.buttons}`}
           >
             Shop
           </a>
           <a
             href="about"
-            className={`rounded border p-2 nounderline ${styles.buttons}`}
+            className={`rounded  p-2 nounderline ${styles.buttons}`}
           >
             About
           </a>
           <a
             href="/contactUs"
-            className={`rounded border p-2 nounderline ${styles.buttons}`}
+            className={`rounded p-2 nounderline ${styles.buttons}`}
           >
             Contact Us
           </a>

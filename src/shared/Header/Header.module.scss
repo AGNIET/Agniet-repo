@@ -1,14 +1,24 @@
+// .allMenu {
+//     position: fixed;
+
+    
+// }
+
 .buttons {
     text-decoration: none !important;
     color: white
 }
 
 .buttons:hover {
-    background-color: #000;
-    border: #000 1px solid;
+    background-color: #fff;
+    border: #fff 1px solid;
+    color: #00E1B7;
+    font-weight: bold;
 }
 
 .dropdownService:hover {
-    background-color: #000;
-    border: #000 1px solid;
+    background-color: #fff;
+    border: #fff 1px solid;
+    color: aqua;
+    font-weight: bold;
 }

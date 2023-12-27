@@ -1,11 +1,11 @@
 import React from "react";
 import { ITConsultingImg } from "../../../../../assets";
+import styles from "./ItConsulting.module.scss";
 
 export default function ItConsulting() {
   return (
-    <div className="full-height-container">
-      {" "}
-      <div className="full-height-container">
+    <div className="full-height-container text-white">
+      <div>
         <div className="container">
           <div className="d-flex gap-5 align-items-center pt-4">
             <div>
@@ -28,7 +28,7 @@ export default function ItConsulting() {
             </div>
           </div>
         </div>
-        <div className="container pt-4">
+        <div className={`p-5 ${styles.gradientContainer}`}>
           <h5>IT Consulting services from Agniet Networking delivers:</h5>
           <ul>
             <li>

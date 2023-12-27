@@ -1,6 +1,6 @@
 import React from "react";
 //styling
-import "./App.scss";
+import styles from "./App.module.scss";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.bundle";
 import { AgnietBg2, HomepageBg } from "./assets";
@@ -33,95 +33,95 @@ import AllIn1Websites from "./components/routes/private/services/allin1Webistes"
 
 function App() {
   return (
-    <div
-      className="App"
-      style={{
-        backgroundImage: `url(${AgnietBg2})`,
-        backgroundSize: "100%",
-        backgroundPositionY: "100%",
-      }}
-    >
-      <Router>
-        <div
-          style={{
-            backgroundImage: `url(${AgnietBg2})`,
-            backgroundSize: "100%",
-            backgroundPositionY: "100%",
+    // <div
+    //   className={`App ${styles.gradientContainer}`}
+    //   // style={{
+    //   //   backgroundImage: `url(${AgnietBg2})`,
+    //   //   backgroundSize: "100%",
+    //   //   backgroundPositionY: "100%",
+    //   // }}
+    // >
 
-            // backgroundColor: "#14134F",
-          }}
-        >
-          <Header />
-          <Routes>
-            <Route path="/" element={<Homepage />} />
-          </Routes>
-        </div>
+    <Router>
+      <div
+        className={`${styles.gradientContainer}`}
 
-        <div
-          style={{
-            backgroundImage: `url(${AgnietBg2})`,
-            // backgroundSize: "100%",
-            // backgroundPositionY: "100%",
+        // style={{
+        //   // backgroundImage: `url(${AgnietBg2})`,
+        //   backgroundSize: "100%",
+        //   backgroundPositionY: "100%",
 
-            // backgroundColor: "#14134F",
-          }}
-        >
-          <Routes>
-            <Route path="/services" element={<Services />} />
+        //   // backgroundColor: "#14134F",
+        // }}
+      >
+        <Header />
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+        </Routes>
+      </div>
 
-            <Route
-              path="/services/managedItServices"
-              element={<ManagedItServices />}
-            />
-            <Route
-              path="/services/businessContinuityPlanning"
-              element={<BusinessContinuityPlanning />}
-            />
-            <Route
-              path="/services/backupDisasterRecovery"
-              element={<BackupDisasterRecovery />}
-            />
-            <Route path="/services/itConsulting" element={<ItConsulting />} />
-            <Route
-              path="/services/networkSecurity"
-              element={<NetworkSecurity />}
-            />
-            <Route path="/services/cloudServices" element={<CloudServices />} />
-            <Route path="/services/voIP" element={<VOIP />} />
-            <Route
-              path="/services/virtualization"
-              element={<Virtualization />}
-            />
-            <Route
-              path="/services/emailSpamProtection"
-              element={<EmailSpamProtection />}
-            />
-            <Route
-              path="/services/microsoftOffice"
-              element={<MicrosoftOffice />}
-            />
-            <Route
-              path="/services/allIn1Websites"
-              element={<AllIn1Websites />}
-            />
-            <Route path="/shop" element={<Shop />} />
-            <Route path="/about" element={<AboutPage />} />
-            <Route path="/contactUs" element={<ContactUs />} />
-          </Routes>
-        </div>
-        <div
-          style={{
-            backgroundImage: `url(${AgnietBg2})`,
-            backgroundSize: "100%",
-            backgroundPositionY: "100%",
+      <div
+        // style={
+        //   {
+        //     // backgroundImage: `url(${AgnietBg2})`,
+        //     // backgroundSize: "100%",
+        //     // backgroundPositionY: "100%",
+        //     // backgroundColor: "#14134F",
+        //   }
+        // }
+        className={`${styles.gradientContainer}`}
+      >
+        <Routes>
+          <Route path="/services" element={<Services />} />
 
-            // backgroundColor: "#14134F",
-          }}
-        >
-          <Footer />
-        </div>
-      </Router>
-    </div>
+          <Route
+            path="/services/managedItServices"
+            element={<ManagedItServices />}
+          />
+          <Route
+            path="/services/businessContinuityPlanning"
+            element={<BusinessContinuityPlanning />}
+          />
+          <Route
+            path="/services/backupDisasterRecovery"
+            element={<BackupDisasterRecovery />}
+          />
+          <Route path="/services/itConsulting" element={<ItConsulting />} />
+          <Route
+            path="/services/networkSecurity"
+            element={<NetworkSecurity />}
+          />
+          <Route path="/services/cloudServices" element={<CloudServices />} />
+          <Route path="/services/voIP" element={<VOIP />} />
+          <Route path="/services/virtualization" element={<Virtualization />} />
+          <Route
+            path="/services/emailSpamProtection"
+            element={<EmailSpamProtection />}
+          />
+          <Route
+            path="/services/microsoftOffice"
+            element={<MicrosoftOffice />}
+          />
+          <Route path="/services/allIn1Websites" element={<AllIn1Websites />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/contactUs" element={<ContactUs />} />
+        </Routes>
+      </div>
+      <div
+        // style={{
+        //   // backgroundImage: `url(${AgnietBg2})`,
+        //   backgroundSize: "100%",
+        //   backgroundPositionY: "100%",
+
+        //   // backgroundColor: "#14134F",
+        // }}
+        className={`${styles.gradientContainer}`}
+      >
+        <Footer />
+      </div>
+    </Router>
+    // </div>
   );
 }
 

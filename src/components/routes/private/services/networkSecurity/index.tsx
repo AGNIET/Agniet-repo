@@ -1,11 +1,11 @@
 import React from "react";
 import { NetworkSecurityImg } from "../../../../../assets";
+import styles from "./NetworkSecurity.module.scss";
 
 export default function NetworkSecurity() {
   return (
-    <div className="full-height-container">
-      {" "}
-      <div className="full-height-container">
+    <div className="full-height-container text-white">
+      <div>
         <div className="container">
           <div className="d-flex gap-5 align-items-center pt-4">
             <div>
@@ -29,7 +29,7 @@ export default function NetworkSecurity() {
             </div>
           </div>
         </div>
-        <div className="container pt-4">
+        <div className={`p-5 ${styles.gradientContainer}`}>
           <h5>Network Security solutions from Agniet Networking offer:</h5>
           <ul>
             <li>

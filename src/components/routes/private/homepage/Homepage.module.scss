@@ -1,6 +1,7 @@
 .homepage {
     height: 100%;
         // background-color:#0085FE;
+    background: linear-gradient(to left, #00f0b3, #036ed9);
 }
 
 .firstDiv {
@@ -9,4 +10,8 @@
 
 .mission, .servicesProvided {
     opacity: 0.8;
+}
+
+.servicesProvided {
+    text-decoration: none;
 }

@@ -1,19 +1,20 @@
 import React from "react";
 import { AgnietBg2, BusinessPlanning } from "../../../../../assets";
+import styles from "./BusinessContinuityPlanning.module.scss";
 
 export default function BusinessContinuityPlanning() {
   return (
     <div
-      className="full-height-container"
-      style={{
-        backgroundImage: `url(${AgnietBg2})`,
-        backgroundSize: "100%",
-        backgroundPositionY: "99%",
-      }}
+      className="full-height-container text-white"
+      // style={{
+      //   // backgroundImage: `url(${AgnietBg2})`,
+      //   backgroundSize: "100%",
+      //   backgroundPositionY: "99%",
+      // }}
     >
       <div className="container">
-        <div className="d-flex gap-5 align-items-center pt-4">
-          <div>
+        <div className="row gap-5 justify-content-between">
+          <div className="col-md-5">
             <img
               src={BusinessPlanning}
               alt="businessImage"
@@ -21,8 +22,8 @@ export default function BusinessContinuityPlanning() {
               className="rounded"
             />
           </div>
-          <div>
-            <p>
+          <div className="col-md-5">
+            <p className="pt-5">
               Disasters, whether from natural causes or man-made errors, can
               strike your company at the most unexpected times. You risk losing
               everything - your valuable data, clients, reputation, and money -
@@ -33,7 +34,7 @@ export default function BusinessContinuityPlanning() {
           </div>
         </div>
       </div>
-      <div className="container pt-4">
+      <div className={`p-5 ${styles.gradientContainer}`}>
         <h5>Business Continuity Planning from Agniet Networking includes:</h5>
         <ul>
           <li>

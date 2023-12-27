@@ -13,7 +13,7 @@ export default function Footer() {
       //   // backgroundColor: "#14134F",
       // }}
     >
-      <p className="text-white rounded fw-bold">&copy; AGNIET</p>
+      {/* <p className="text-white rounded fw-bold">&copy; AGNIET</p> */}
     </div>
   );
 }

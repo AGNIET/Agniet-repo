@@ -1,24 +1,17 @@
 import React from "react";
 import { AgnietBg2, BackupRecovery } from "../../../../../assets";
+import styles from "./BackupDisasterRecovery.module.scss";
 
 export default function BackupDisasterRecovery() {
   return (
     <div
-      className="full-height-container"
-      style={{
-        backgroundImage: `url(${AgnietBg2})`,
-        backgroundSize: "100%",
-        backgroundPositionY: "100%",
-      }}
+      className="full-height-container text-white"
+      // style={{
+      //   // backgroundImage: `url(${AgnietBg2})`,
+      //   backgroundSize: "100%",
+      //   backgroundPositionY: "100%",
+      // }}
     >
-      <div className="py-4 ps-3 fw-bold">
-        <a
-          href="/services/managedItServices"
-          className="text-decoration-none text-white"
-        >
-          <h4>Managed It Services</h4>
-        </a>
-      </div>
       <div className="container p-0">
         <div className="row gap-5 justify-content-between">
           <div className="col-md-5">
@@ -30,10 +23,10 @@ export default function BackupDisasterRecovery() {
             />
           </div>
           <div className="col-md-5">
-            <p>
-              Do you have critical data stored on-site? Agniet Networking will
-              provide you with a backup solution so you can have peace of mind
-              knowing your data is safe and recoverable. Our data backup
+            <p className="pt-5">
+              Do you have critical data stored on-site? <br /> Agniet Networking
+              will provide you with a backup solution so you can have peace of
+              mind knowing your data is safe and recoverable. Our data backup
               solutions include on-site and cloud backups. We can replicate your
               entire servers and host it in our offsite data center for maximum
               protection.
@@ -41,7 +34,7 @@ export default function BackupDisasterRecovery() {
           </div>
         </div>
       </div>
-      <div className="container pt-4">
+      <div className={`p-5 ${styles.gradientContainer}`}>
         <h5>
           With Agniet Networking's Backup and Disaster Recovery solutions, you
           get:
