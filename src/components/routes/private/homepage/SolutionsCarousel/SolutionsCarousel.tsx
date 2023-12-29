@@ -53,11 +53,11 @@ const SolutionsCarousel = () => {
       <h4 className="text-white text-center pb-4">Solutions we offer you</h4>
       <Slider {...settings}>
         {slides?.map((slide: any, index: number) => (
-          <div className="p-3">
+          <div className="d-flex p-3">
             <div
-              className={`bg-white container rounded pt-4 text-primary ${styles.servicesProvided}`}
+              className={`container rounded pt-4 ${styles.servicesProvided}`}
             >
-              <div className="row text-primary">
+              <div className="row">
                 <div key={index} className="col-lg-3 col-md-3 col-sm-6 col-xs-">
                   <div className="d-flex ps-5">
                     <a
@@ -73,7 +73,7 @@ const SolutionsCarousel = () => {
                         alt={`Image ${index + 1}`}
                         className="d-flex rounded"
                       />
-                      <p className="d-flex justify-content-center fw-bold pt-2">
+                      <p className="d-flex justify-content-center fw-bold pt-2 text-white">
                         {slide.text}
                       </p>
                     </a>

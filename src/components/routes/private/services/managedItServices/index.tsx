@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./ManagedItServices.module.scss";
-import { AgnietBg2, ItManagement } from "../../../../../assets";
+import { ItManagement } from "../../../../../assets";
+import { Parallax } from "react-parallax";
 
 export default function ManagedItServices() {
   return (

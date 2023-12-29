@@ -40,10 +40,8 @@ export default function Homepage() {
           <GeneralLoader />
         ) : (
           <div>
-            <div
-              className={`d-flex justify-content-around rounded text-white ${styles.mission}`}
-            >
-              <div className="pt-5">
+            <div className={`row text-white ${styles.mission}`}>
+              <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 container pt-5">
                 <div className="d-flex justify-content-center">
                   <h3>What's Our Mission?</h3>
                 </div>
@@ -66,7 +64,7 @@ export default function Homepage() {
                   </div>
                 </div>
               </div>
-              <div>
+              <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 container">
                 <img
                   src={HomepageMaintenance}
                   alt="Gif"

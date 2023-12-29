@@ -19,6 +19,13 @@ import BackupSupport from "./images/BackupSupport.jpg";
 import EmailProtectionService from "./images/EmailProtection Service.jpg";
 import VOIPService from "./images/VOIPService.png";
 import HomepageMaintenance from "./images/HomepageMaintenance.gif";
+
+// icons
+import FacebookIcon from "./icons/FacebookIcon";
+import InstagramIcon from "./icons/InstagramIcon";
+import LinkedInIcon from "./icons/LinkedInIcon";
+import TwitterIcon from "./icons/TwitterIcon";
+
 //products for shop
 import CameraImage from "./images/CameraImage.jpg";
 import MonitorImage from "./images/Monitor.jpg";
@@ -46,6 +53,10 @@ export {
   EmailProtectionService,
   VOIPService,
   HomepageMaintenance,
+  FacebookIcon,
+  InstagramIcon,
+  LinkedInIcon,
+  TwitterIcon,
   CameraImage,
   MonitorImage,
   MouseImage,

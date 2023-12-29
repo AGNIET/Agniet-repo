@@ -43,7 +43,7 @@ export default function ContactUs() {
         {loading ? (
           <GeneralLoader />
         ) : (
-          <div className="row d-flex container">
+          <div className="row d-flex container text-white">
             <h3 className="pt-4">SEND US A MESSAGE</h3>
             <div className="mx-auto col-lg-12 col-md-12 col-lg-6">
               <form onSubmit={handleSubmit(onsubmit)}>
@@ -51,14 +51,14 @@ export default function ContactUs() {
                   <p>Name:</p>
                   <div className="col-md-6 d-flex flex-column">
                     <input
-                      className="rounded border border-primary"
+                      className="rounded border"
                       {...register("firstName")}
                     />
                     <label>First Name</label>
                   </div>
                   <div className="col-md-6 d-flex flex-column">
                     <input
-                      className="rounded border border-primary"
+                      className="rounded border"
                       {...register("lastName")}
                     />
                     <label>Last Name</label>
@@ -67,31 +67,25 @@ export default function ContactUs() {
                 <div className="row p-2">
                   <div className="col-md-6 d-flex flex-column">
                     <label>Email:</label>
-                    <input
-                      className="rounded border border-primary"
-                      {...register("email")}
-                    />
+                    <input className="rounded border" {...register("email")} />
                   </div>
                   <div className="col-md-6 d-flex flex-column">
                     <label>Phone Nr.</label>
-                    <input
-                      className="rounded border border-primary"
-                      {...register("phone")}
-                    />
+                    <input className="rounded border" {...register("phone")} />
                   </div>
                 </div>
                 <div className="row p-2">
                   <div className="col-md-6 d-flex flex-column">
                     <label>Address</label>
                     <input
-                      className="rounded border border-primary"
+                      className="rounded border"
                       {...register("address")}
                     />
                   </div>
                   <div className="col-md-6 d-flex flex-column">
                     <label>Message</label>
                     <input
-                      className="rounded border border-primary"
+                      className="rounded border"
                       {...register("message")}
                     />
                   </div>

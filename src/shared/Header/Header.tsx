@@ -10,8 +10,8 @@ import styles from "./Header.module.scss";
 export default function Header() {
   return (
     <div className={styles.allMenu}>
-      <div className="d-flex justify-content-between p-3">
-        <div className={styles.agnietLogo}>
+      <div className="row me-2 p-3">
+        <div className="col-lg-9 col-md-8 col-sm-6 col-xs-6">
           <img
             src={AgnietLogoBlue2}
             width={100}
@@ -19,7 +19,7 @@ export default function Header() {
             className="rounded"
           />
         </div>
-        <div className="d-flex align-items-center gap-2">
+        <div className="col-lg-3 col-md-4 col-sm-6 col-xs-6 d-flex align-items-center gap-2">
           <a href="/" className={`rounded  p-2 ${styles.buttons}`}>
             Home
           </a>
@@ -110,12 +110,12 @@ export default function Header() {
               </ul>
             </div>
           </div>
-          <a
+          {/* <a
             href="/shop"
             className={`rounded  p-2 nounderline ${styles.buttons}`}
           >
             Shop
-          </a>
+          </a> */}
           <a
             href="about"
             className={`rounded  p-2 nounderline ${styles.buttons}`}
@@ -124,7 +124,7 @@ export default function Header() {
           </a>
           <a
             href="/contactUs"
-            className={`rounded p-2 nounderline ${styles.buttons}`}
+            className={`rounded text-nowrap p-2 nounderline ${styles.buttons}`}
           >
             Contact Us
           </a>
