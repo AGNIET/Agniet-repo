@@ -21,17 +21,17 @@ export default function Footer() {
               <span>Get connected with us on social networks:</span>
             </div>
             <div>
-              <a href="#" className="text-white me-4">
-                <FacebookIcon />
-              </a>
-              <a href="#" className="text-white me-4">
+              <a
+                href="https://www.instagram.com/agniet.ax/"
+                className="text-white me-4"
+              >
                 <InstagramIcon />
               </a>
-              <a href="3" className="text-white me-4">
+              <a
+                href="https://www.linkedin.com/company/agniet-solutions"
+                className="text-white me-4"
+              >
                 <LinkedInIcon />
-              </a>
-              <a href="3" className="text-white me-4">
-                <TwitterIcon />
               </a>
             </div>
           </section>
@@ -117,7 +117,7 @@ export default function Footer() {
             </div>
           </section>
           <div className={`${styles.copyrightSection} text-center p-3`}>
-            © 2020 Copyright:{" "}
+            © 2023 Copyright:{" "}
             <a className="text-white" href="https://mdbootstrap.com/">
               Agniet.com
             </a>

@@ -19,6 +19,7 @@ import BackupSupport from "./images/BackupSupport.jpg";
 import EmailProtectionService from "./images/EmailProtection Service.jpg";
 import VOIPService from "./images/VOIPService.png";
 import HomepageMaintenance from "./images/HomepageMaintenance.gif";
+import SendMessageIcon from "./images/SendMessageIcon.png";
 
 // icons
 import FacebookIcon from "./icons/FacebookIcon";
@@ -53,6 +54,7 @@ export {
   EmailProtectionService,
   VOIPService,
   HomepageMaintenance,
+  SendMessageIcon,
   FacebookIcon,
   InstagramIcon,
   LinkedInIcon,

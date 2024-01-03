@@ -1,3 +1,43 @@
 .container {
     height: 74vh;
 }
+
+.contactForm {
+    max-width: 400px;
+    margin: 0 auto;
+  
+    label {
+      display: block;
+      margin-bottom: 10px;
+  
+      input,
+      textarea {
+        width: 100%;
+        padding: 8px;
+        margin-top: 4px;
+      }
+  
+      textarea {
+        height: 100px;
+      }
+  
+
+    }
+
+    button {
+      background-color: #4caf50;
+      color: white;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+    }
+  }
+          .errorData {
+        color: red;
+        font-size: 12px;
+        margin-top: 4px;
+        display: block;
+      }
+  .submitBtn {
+    background-color: #00BA71
+  }

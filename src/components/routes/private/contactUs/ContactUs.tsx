@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { useForm } from "react-hook-form";
 import GeneralLoader from "../../../../shared/Loader/GeneralLoader";
 import styles from "./ContactUs.module.scss";
-import { AgnietBg2 } from "../../../../assets";
+import { SendMessageIcon } from "../../../../assets";
 
 interface FormInput {
   firstName: string;
@@ -16,88 +15,135 @@ interface FormInput {
 export default function ContactUs() {
   const [loading, setLoading] = useState(true);
 
-  const { register, handleSubmit } = useForm<FormInput>();
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
 
-  const onsubmit = (data: FormInput) => {
-    console.log(data);
-  };
+  const [formErrors, setFormErrors] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
 
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
     }, 2000);
   }, []);
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // Perform form submission logic here
+
+    // Example: Basic form validation
+    const newErrors = {
+      name: formData.name.trim() === "" ? "Name is required" : "",
+      email: !/^\S+@\S+\.\S+$/.test(formData.email)
+        ? "Invalid email address"
+        : "",
+      message: formData.message.trim() === "" ? "Message is required" : "",
+    };
+
+    setFormErrors(newErrors);
+
+    if (Object.values(newErrors).every((error) => error === "")) {
+      // If there are no errors, submit the form
+      console.log("Form submitted:", formData);
+    }
+  };
 
   return (
-    <>
+    <div>
       <div
-        className={`d-flex justify-content-center shadow-sm ${styles.container}`}
         // style={{
         //   backgroundImage: `url(${AgnietBg2})`,
         //   backgroundSize: "100%",
         //   backgroundPositionY: "100%",
-
-        //   // backgroundColor: "#14134F",
         // }}
+        className={`full-height-container p-3 ${styles.homepage}`}
       >
         {loading ? (
           <GeneralLoader />
         ) : (
-          <div className="row d-flex container text-white">
-            <h3 className="pt-4">SEND US A MESSAGE</h3>
-            <div className="mx-auto col-lg-12 col-md-12 col-lg-6">
-              <form onSubmit={handleSubmit(onsubmit)}>
-                <div className="row p-2">
-                  <p>Name:</p>
-                  <div className="col-md-6 d-flex flex-column">
-                    <input
-                      className="rounded border"
-                      {...register("firstName")}
-                    />
-                    <label>First Name</label>
-                  </div>
-                  <div className="col-md-6 d-flex flex-column">
-                    <input
-                      className="rounded border"
-                      {...register("lastName")}
-                    />
-                    <label>Last Name</label>
+          <div className="container pb-4">
+            <form className="rounded bg-white" onSubmit={handleSubmit}>
+              <div className="row">
+                <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 pt-5">
+                  <span>
+                    <img src={SendMessageIcon} alt="icon-send-msg" />
+                  </span>
+                </div>
+                <div className="col-lg-6 col-md-6 col-sm-12 col-sm-12">
+                  <div className="d-flex flex-column align-items-center justify-content-center h-75 pt-5 gap-5">
+                    <label>
+                      <h4
+                        className={`${styles.formHeader} d-flex justify-content-center fw-bold pt-5`}
+                      >
+                        Get in touch
+                      </h4>
+                      <input
+                        type="text"
+                        name="name"
+                        value={formData.name}
+                        onChange={handleChange}
+                        placeholder="John Doe"
+                        className="bg-light border rounded p-2 mt-4"
+                      />
+                      <span className={styles.errorData}>
+                        {formErrors.name}
+                      </span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="email"
+                        name="email"
+                        className="bg-light border rounded p-2"
+                        placeholder="Email"
+                        value={formData.email}
+                        onChange={handleChange}
+                      />
+                      <span className={styles.errorData}>
+                        {formErrors.email}
+                      </span>
+                    </label>
+
+                    <label>
+                      <textarea
+                        name="message"
+                        placeholder="Message"
+                        className="bg-light border rounded p-4"
+                        value={formData.message}
+                        onChange={handleChange}
+                      />
+                      <span className={styles.errorData}>
+                        {formErrors.message}
+                      </span>
+                    </label>
+                    <button
+                      type="submit"
+                      className={`${styles.submitBtn} px-3 py-2 text-white rounded`}
+                    >
+                      Submit
+                    </button>
                   </div>
                 </div>
-                <div className="row p-2">
-                  <div className="col-md-6 d-flex flex-column">
-                    <label>Email:</label>
-                    <input className="rounded border" {...register("email")} />
-                  </div>
-                  <div className="col-md-6 d-flex flex-column">
-                    <label>Phone Nr.</label>
-                    <input className="rounded border" {...register("phone")} />
-                  </div>
-                </div>
-                <div className="row p-2">
-                  <div className="col-md-6 d-flex flex-column">
-                    <label>Address</label>
-                    <input
-                      className="rounded border"
-                      {...register("address")}
-                    />
-                  </div>
-                  <div className="col-md-6 d-flex flex-column">
-                    <label>Message</label>
-                    <input
-                      className="rounded border"
-                      {...register("message")}
-                    />
-                  </div>
-                </div>
-                <div className="pt-4">
-                  <button className="btn btn-primary">Submit</button>
-                </div>
-              </form>
-            </div>
+              </div>
+            </form>
           </div>
         )}
       </div>
-    </>
+    </div>
   );
 }
